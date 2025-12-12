@@ -266,11 +266,11 @@ def cashier_dashboard():
         
         # --- USER INPUT LOGIC ---
         # The instruction is now only in the input prompt, which is clearer
-        choice = input(f"\n{YELLOW}Choose option (1-4) or Product Number (1-{len(products)}) to Quick Add:{RESET} ▶ ").lower()
+        choice = input(f"\n{YELLOW}Choose option (1-4) or Product Number (1-{len(products)}): {RESET}").lower()
 
         # 1. ADD ITEM (No product list print)
         if choice == "1":
-            product_num = input("Enter Product Number to Add (B to cancel) ▶ ").lower()
+            product_num = input("Enter Product Number to Add (B to cancel):  ").lower()
             if product_num == "b":
                 continue
 
