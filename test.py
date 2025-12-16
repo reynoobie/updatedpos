@@ -296,7 +296,7 @@ def login():
         console.print(build_dashboard_panel("Please login (admin/cashier)"))
 
         user = Prompt.ask("User").lower()
-        password = Prompt.ask("Password", password=True)
+        password = Prompt.ask("Password",)
 
         if user in USERS and USERS[user] == password:
             if user == "admin":
@@ -304,7 +304,7 @@ def login():
             else:
                 cashier_interface(user)
         else:
-            Prompt.ask("Invalid login. Press Enter")
+            Prompt.ask("Invalid login. Press Enter") 
 
 # ==========================
 # MAIN
