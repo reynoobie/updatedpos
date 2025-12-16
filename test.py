@@ -226,10 +226,10 @@ def cashier_interface(user_name="cashier"):
         console.print(layout)
 
         choice = Prompt.ask(
-            "Select product [1-4] | [green]D[/green] = Finish | [green]C[/green] = Clear | [green]cancel[/green] = Exit"
+            "Select product [1-4] | [green]D[/green] = Checkout | [green]C[/green] = Clear | [green]E[/green] = Back To Log-in"
         ).lower()
 
-        if choice == "cancel":
+        if choice== "e":
             break
 
         elif choice == "c":
